@@ -1,0 +1,36 @@
+/* COLORES */
+
+$negro: #000000;
+$blanco: #ffffff;
+$gris: #808184;
+$rojo: #BE1E2D;
+
+
+
+/* TIPOGRAFÍAS */
+$open: 'Open Sans', sans-serif;
+$gentium: 'Gentium Basic', serif;
+
+
+/* GENERALES */
+
+body{
+    background-color: $negro;
+    font-family: $open;
+}
+
+.blanco{
+    color: $blanco!important;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.justificado{
+    text-align: justify;
+    hyphens: auto;
+}
+
+
+/* establecer max width  1366 !!!!!!!!!!!!*/

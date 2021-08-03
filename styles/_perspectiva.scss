@@ -1,0 +1,112 @@
+#perspectiva{
+    margin: 150px 0px;
+    border: blue solid 2px;
+    width: 100%;
+    display: flex;
+    perspective: 600px;
+    .modulosIzq{
+        display: flex;
+        flex-direction: row-reverse;
+        border: red solid 1px;
+       /*  transition: .3s;  */
+        transform: rotateY(70deg);
+        position: relative;
+        left: 150px;
+        .moduloSolo{
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            -webkit-font-smoothing: subpixel-antialiased;
+
+            width: 20%;
+            padding: 3px;
+            display: inline-block;
+            border: 1px solid rgba(250,200,200,.5);
+            img{
+                display: block;
+                height: auto;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            p{
+                font-size: 7px;
+                color: white;
+            }
+        }
+    }
+    .modulosDer{
+        display: flex;
+        flex-direction: row;
+        border: red solid 1px;
+        /* transition: .3s;  */
+        transform: rotateY(-70deg);
+        position: relative;
+        right: 150px;
+        .moduloSolo{
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            -webkit-font-smoothing: subpixel-antialiased;
+            width: 20%;
+            padding: 3px;
+            display: inline-block;
+            border: 1px solid rgba(250,200,200,.5);
+            img{
+                display: block;
+                height: auto;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            p{
+                font-size: 7px;
+                color: white;
+            }
+        }
+    }
+}
+
+#caminoLuz{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 40vh;
+    .circulo{
+        height: 100px;
+        width: 100px;
+        border: white solid 18px;
+        border-radius: 100px;
+        filter: blur(10px);
+    }
+}
+
+/* .wrapper:hover .inner {
+  transform: rotate(0)
+  
+} */
+    
+  /* .inner {
+    transition: .3s; 
+    transform: rotateY(40deg);
+  } */
+  
+/*   .inner figure {
+    width: 11em;
+    padding: 1em;
+    display: inline-block;
+    margin-right: 1em;
+    border: 1px solid rgba(250,200,200,.5);
+  }
+   */
+/*   .inner figcaption {
+    text-align: center;
+    margin: .5em 0;
+    font-weight: bold;
+  } */
+  
+/*   .inner img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-filter: sepia(75%);
+  } */

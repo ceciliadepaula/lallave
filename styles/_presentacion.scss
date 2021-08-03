@@ -1,0 +1,76 @@
+#presentacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    #llaveCerrojo{
+        #compasImg, #llaveOjoImg{
+            position:absolute;
+            width: 380px;
+            margin-top: 20px;  
+        }
+        #compasImg{
+            opacity: 0;
+        }
+        #llaveOjoImg{
+            opacity: 1;
+        }
+        #ingresar{
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            padding-top: 340px;
+            opacity: 1;
+        }
+    }
+    #textoIntroduccion{
+        #laLLaveTitulo{
+            color: $gris;
+            font-family: $gentium;
+            font-size: 160px;
+            padding-top: 25px;
+        }
+        .textoIntro{
+            font-size: 17px;
+            margin-top: -15px;
+        }
+    }
+    #llaveAntigua{
+        #llaveAntImg{
+            width: 250px;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+    }
+
+}
+
+#bienvenidos{
+    font-family: $gentium;
+    font-size: 53px;
+    margin-top: 190px;
+    margin-bottom: -275px;
+    opacity: 0;
+}
+
+
+/* ANIMACIÓN IMAGEN */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+    }
+  
+    to {
+        opacity: 0;
+    }
+}

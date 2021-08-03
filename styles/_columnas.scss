@@ -1,0 +1,20 @@
+#textoColumnas{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    .columnas{
+        height: 600px;
+    }
+    #columnaDerecha{
+        text-align: right; 
+    }
+    p::first-letter{
+        font-size: 125px;
+        font-family: $gentium;
+        margin-right: 15px;
+        margin-top: -42px;
+        margin-bottom: -60px;
+        float:left;
+    }
+}

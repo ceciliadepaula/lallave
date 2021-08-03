@@ -1,0 +1,28 @@
+/* BARRA NAVEGACIÓN */
+#barraNavegacion{
+    opacity: 0;
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: auto;
+        li {
+            list-style-image: url(/images/puntitosBlancos.svg);
+            padding-inline-start: 1ch;
+            margin-left: 80px;
+            margin-top: 22px;
+            a{
+                font-size: 18px;
+                font-weight: bold; 
+                color: $blanco;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+    #lazo{
+        padding-top: 5px;
+        background-image: url("/images/lazo.svg");
+        background-repeat: repeat-x;
+        height: 39px;
+    }
+}
