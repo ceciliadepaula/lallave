@@ -1,0 +1,26 @@
+section#perspectivas{
+    /* margin: auto;
+    max-width: 2000px; */
+    img{
+        width: 100%;
+        /* max-width: 2000px; */
+        position: absolute;
+        bottom: 0;
+    }
+
+    img#caminoMason{
+
+    }
+    img#discosMasonicos{
+
+    }
+
+    div#grilla{
+        border: 1px solid red;
+        height: calc(40vh);
+        width: 100%;
+        position: relative;
+        top: 30px;
+        top: calc(22vh);
+    }
+}

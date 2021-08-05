@@ -179,143 +179,25 @@ body {
   float: left;
 }
 
-#perspectiva {
-  margin: 150px 0px;
-  border: blue solid 2px;
+/* @import 'perspectiva'; */
+section#perspectivas {
+  /* margin: auto;
+    max-width: 2000px; */
+}
+
+section#perspectivas img {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-perspective: 600px;
-          perspective: 600px;
+  /* max-width: 2000px; */
+  position: absolute;
+  bottom: 0;
 }
 
-#perspectiva .modulosIzq {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  border: red solid 1px;
-  /*  transition: .3s;  */
-  -webkit-transform: rotateY(70deg);
-          transform: rotateY(70deg);
+section#perspectivas div#grilla {
+  border: 1px solid red;
+  height: calc(40vh);
+  width: 100%;
   position: relative;
-  left: 150px;
+  top: 30px;
+  top: calc(22vh);
 }
-
-#perspectiva .modulosIzq .moduloSolo {
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-font-smoothing: subpixel-antialiased;
-  width: 20%;
-  padding: 3px;
-  display: inline-block;
-  border: 1px solid rgba(250, 200, 200, 0.5);
-}
-
-#perspectiva .modulosIzq .moduloSolo img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-#perspectiva .modulosIzq .moduloSolo p {
-  font-size: 7px;
-  color: white;
-}
-
-#perspectiva .modulosDer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border: red solid 1px;
-  /* transition: .3s;  */
-  -webkit-transform: rotateY(-70deg);
-          transform: rotateY(-70deg);
-  position: relative;
-  right: 150px;
-}
-
-#perspectiva .modulosDer .moduloSolo {
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-font-smoothing: subpixel-antialiased;
-  width: 20%;
-  padding: 3px;
-  display: inline-block;
-  border: 1px solid rgba(250, 200, 200, 0.5);
-}
-
-#perspectiva .modulosDer .moduloSolo img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-#perspectiva .modulosDer .moduloSolo p {
-  font-size: 7px;
-  color: white;
-}
-
-#caminoLuz {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  bottom: 40vh;
-}
-
-#caminoLuz .circulo {
-  height: 100px;
-  width: 100px;
-  border: white solid 18px;
-  border-radius: 100px;
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
-}
-
-/* .wrapper:hover .inner {
-  transform: rotate(0)
-  
-} */
-/* .inner {
-    transition: .3s; 
-    transform: rotateY(40deg);
-  } */
-/*   .inner figure {
-    width: 11em;
-    padding: 1em;
-    display: inline-block;
-    margin-right: 1em;
-    border: 1px solid rgba(250,200,200,.5);
-  }
-   */
-/*   .inner figcaption {
-    text-align: center;
-    margin: .5em 0;
-    font-weight: bold;
-  } */
-/*   .inner img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    margin: 0 auto;
-    -webkit-filter: sepia(75%);
-  } */
 /*# sourceMappingURL=style.css.map */
