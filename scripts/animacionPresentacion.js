@@ -8,6 +8,7 @@ var textoIntro = document.getElementsByClassName("textoIntro");
 var textoColumnas = document.getElementById("textoColumnas");
 var perspectivas = document.getElementById("perspectivas");
 var footer = document.getElementById("footer");
+var portadasSolas = document.getElementById("portadasSolas");
 
 textoColumnas.style.display = "none";
 perspectivas.style.display = "none" ;
@@ -54,5 +55,18 @@ function Fusion(){
     textoColumnas.style.display = "grid";
     perspectivas.style.display = "inherit" ;
     footer.style.display = "inherit" ;
-
+    
 }
+
+
+/* var caminoMason = document.getElementById("caminoMason");
+var portadasSolas = document.getElementById("portadasSolas");
+
+caminoMason.addEventListener("mouseover", Portadas);
+
+function Portadas(){
+    caminoMason.src="../images/triangulo_discos_amarillo.svg";
+    console.log("Qgi")
+} */
+
+

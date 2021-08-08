@@ -11,7 +11,8 @@ section#perspectivas{
             position: absolute;
             bottom: 0;
         }
-        div#portadasSolas{
+        #portadasSolas{
+           /*  opacity: 0; */
             height: 520px;
             display: grid;
             grid-template-rows: 1fr;

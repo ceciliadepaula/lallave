@@ -240,7 +240,8 @@ section#perspectivas div.contenedorImg img {
   bottom: 0;
 }
 
-section#perspectivas div.contenedorImg div#portadasSolas {
+section#perspectivas div.contenedorImg #portadasSolas {
+  /*  opacity: 0; */
   height: 520px;
   display: -ms-grid;
   display: grid;
@@ -250,11 +251,11 @@ section#perspectivas div.contenedorImg div#portadasSolas {
       grid-template-columns: 235px 138px 74px 45px 30px 22px 17px 14px 12px 12px 13px 10px 14px 17px 25px 29px 45px 74px 128px 246px;
 }
 
-section#perspectivas div.contenedorImg div#portadasSolas div {
+section#perspectivas div.contenedorImg #portadasSolas div {
   opacity: 0.35;
 }
 
-section#perspectivas div.contenedorImg div#portadasSolas div:hover {
+section#perspectivas div.contenedorImg #portadasSolas div:hover {
   opacity: 1;
 }
 
