@@ -1,5 +1,4 @@
 #textoColumnas{
-    border: green 1px solid;
     margin-top: 200px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -14,6 +13,9 @@
     #columnaDerecha{
         display: flex;
         align-items: center;
+        img{
+            max-height: calc(100vh - 100px);
+        }
     }
     #columnaDerecha{
         justify-content: flex-end;

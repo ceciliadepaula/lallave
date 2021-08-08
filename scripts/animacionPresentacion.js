@@ -5,6 +5,14 @@ var ingresar = document.getElementById("ingresar");
 var bienvenidos = document.getElementById("bienvenidos");
 var textoIntro = document.getElementsByClassName("textoIntro");
 
+var textoColumnas = document.getElementById("textoColumnas");
+var perspectivas = document.getElementById("perspectivas");
+var footer = document.getElementById("footer");
+
+textoColumnas.style.display = "none";
+perspectivas.style.display = "none" ;
+footer.style.display = "none" ;
+
 llaveOjoImg.addEventListener("click", Fusion);
 
 function Fusion(){
@@ -42,5 +50,9 @@ function Fusion(){
     barraNavegacion.style.animationDuration = "5s";
     barraNavegacion.style.animationName = "aparecer";
     barraNavegacion.style.animationFillMode = "forwards";
-    
+
+    textoColumnas.style.display = "grid";
+    perspectivas.style.display = "inherit" ;
+    footer.style.display = "inherit" ;
+
 }

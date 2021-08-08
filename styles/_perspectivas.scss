@@ -2,7 +2,6 @@ section#perspectivas{
     max-width: 1200px;
     margin: auto;
     height: calc(100vh - 100px);
-    border: burlywood 1px solid;
     position: relative;
     top: -100px;
     div.contenedorImg{
@@ -13,14 +12,10 @@ section#perspectivas{
             bottom: 0;
         }
         div#portadasSolas{
-            /* position: initial;
-            display: flex;
-            flex-direction: row; */
             height: 520px;
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 235px 138px 74px 45px 30px 22px 17px 14px 12px 12px 13px 10px 14px 17px 25px 29px 45px 74px 128px 246px;
-            /* grid-template-columns: repeat(20, mincontent); */
             div{
                 opacity: 0.35;
             }

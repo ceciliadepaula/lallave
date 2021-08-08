@@ -1,13 +1,12 @@
 #perspectiva{
+    opacity: 0;
     margin: 150px 0px;
-    border: blue solid 2px;
     width: 100%;
     display: flex;
     perspective: 600px;
     .modulosIzq{
         display: flex;
         flex-direction: row-reverse;
-        border: red solid 1px;
        /*  transition: .3s;  */
         transform: rotateY(70deg);
         position: relative;
@@ -21,7 +20,6 @@
             width: 20%;
             padding: 3px;
             display: inline-block;
-            border: 1px solid rgba(250,200,200,.5);
             img{
                 display: block;
                 height: auto;
@@ -37,7 +35,6 @@
     .modulosDer{
         display: flex;
         flex-direction: row;
-        border: red solid 1px;
         /* transition: .3s;  */
         transform: rotateY(-70deg);
         position: relative;

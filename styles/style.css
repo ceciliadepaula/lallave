@@ -27,7 +27,8 @@ body {
 
 /* BARRA NAVEGACIÓN */
 #barraNavegacion {
-  /* opacity: 0; */
+  opacity: 0;
+  /* ------------- */
   position: fixed;
   width: 100%;
   background-color: #000000;
@@ -76,7 +77,6 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  border: blue 1px solid;
   position: relative;
   top: 100px;
   padding-top: calc((100vh - 580px)/2);
@@ -167,7 +167,6 @@ body {
 }
 
 #textoColumnas {
-  border: green 1px solid;
   margin-top: 200px;
   display: -ms-grid;
   display: grid;
@@ -194,6 +193,11 @@ body {
           align-items: center;
 }
 
+#textoColumnas #columnaIzq img,
+#textoColumnas #columnaDerecha img {
+  max-height: calc(100vh - 100px);
+}
+
 #textoColumnas #columnaDerecha {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -218,12 +222,10 @@ body {
   float: left;
 }
 
-/* @import 'perspectiva'; */
 section#perspectivas {
   max-width: 1200px;
   margin: auto;
   height: calc(100vh - 100px);
-  border: burlywood 1px solid;
   position: relative;
   top: -100px;
 }
@@ -239,9 +241,6 @@ section#perspectivas div.contenedorImg img {
 }
 
 section#perspectivas div.contenedorImg div#portadasSolas {
-  /* position: initial;
-            display: flex;
-            flex-direction: row; */
   height: 520px;
   display: -ms-grid;
   display: grid;
@@ -249,7 +248,6 @@ section#perspectivas div.contenedorImg div#portadasSolas {
       grid-template-rows: 1fr;
   -ms-grid-columns: 235px 138px 74px 45px 30px 22px 17px 14px 12px 12px 13px 10px 14px 17px 25px 29px 45px 74px 128px 246px;
       grid-template-columns: 235px 138px 74px 45px 30px 22px 17px 14px 12px 12px 13px 10px 14px 17px 25px 29px 45px 74px 128px 246px;
-  /* grid-template-columns: repeat(20, mincontent); */
 }
 
 section#perspectivas div.contenedorImg div#portadasSolas div {
@@ -539,5 +537,11 @@ div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.des
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+footer p {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
