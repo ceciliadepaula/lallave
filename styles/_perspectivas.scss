@@ -1,26 +1,33 @@
 section#perspectivas{
-    /* margin: auto;
-    max-width: 2000px; */
-    img{
-        width: 100%;
-        /* max-width: 2000px; */
-        position: absolute;
-        bottom: 0;
-    }
-
-    img#caminoMason{
-
-    }
-    img#discosMasonicos{
-
-    }
-
-    div#grilla{
-        border: 1px solid red;
-        height: calc(40vh);
-        width: 100%;
-        position: relative;
-        top: 30px;
-        top: calc(22vh);
+    max-width: 1200px;
+    margin: auto;
+    height: calc(100vh - 100px);
+    border: burlywood 1px solid;
+    position: relative;
+    top: -100px;
+    div.contenedorImg{
+        height: 100%;
+        img{
+            max-width: 1200px;
+            position: absolute;
+            bottom: 0;
+        }
+        div#portadasSolas{
+            /* position: initial;
+            display: flex;
+            flex-direction: row; */
+            height: 520px;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 235px 138px 74px 45px 30px 22px 17px 14px 12px 12px 13px 10px 14px 17px 25px 29px 45px 74px 128px 246px;
+            /* grid-template-columns: repeat(20, mincontent); */
+            div{
+                opacity: 0.35;
+            }
+            div:hover{
+                opacity: 1;
+            }
+        }        
     }
 }
+

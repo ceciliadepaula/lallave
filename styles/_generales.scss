@@ -4,6 +4,7 @@ $negro: #000000;
 $blanco: #ffffff;
 $gris: #808184;
 $rojo: #BE1E2D;
+$amarillo: #ffe000;
 
 
 
@@ -17,6 +18,8 @@ $gentium: 'Gentium Basic', serif;
 body{
     background-color: $negro;
     font-family: $open;
+    max-width: 1500px; /* 1366? */
+    margin: auto;
 }
 
 .blanco{
@@ -33,4 +36,3 @@ body{
 }
 
 
-/* establecer max width  1366 !!!!!!!!!!!!*/

@@ -1,0 +1,185 @@
+div.modal.fade{
+    div.modal-dialog{
+        min-width: 70vw;
+        div.modal-content{
+            div.modal-body{
+                display: flex;
+                background-color: $negro ;
+                padding-right: 0;
+                div.izq{
+                    height: 500px;
+                    width: 500px;
+                    .grillaCrows{
+                        position: absolute;
+                        top:0;
+                        height: 500px;
+                        width: 500px;
+                        display: grid;
+                        grid-template-areas:    ".	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	."
+                                                ".	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	."
+                                                ".	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	."
+                                                ".	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	."
+                                                ".	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	."
+                                                ".	.	.	.	.	.	PO	PO	PO	PO	PO	PO	PO	PO	.	.	.	.	.	."
+                                                ".	.	.	.	.	.	P1	P1	CU	CU	CU	CU	P2	P2	.	.	.	.	.	."
+                                                ".	.	.	.	.	.	P3	C1	C1	C1	C1	C1	C1	P4	.	.	.	.	.	."
+                                                ".	.	.	.	.	.	P3	CL	CI	CI	CI	CI	C2	P4	.	.	.	.	.	."
+                                                ".	.	.	HD	HD	.	P3	CL	C3	EY	EY	C4	C2	P4	.	H1	H1	.	.	."
+                                                ".	.	.	HD	HD	.	P3	CL	C5	C5	C5	C5	C2	P4	.	H1	H1	.	.	."
+                                                ".	.	.	HD	HD	.	P3	CL	TR	TR	TR	TR	C2	P4	.	H1	H1	.	.	."
+                                                ".	.	.	CO	CO	.	P3	ES	ES	ES	ES	ES	ES	P4	.	C6	C6	.	.	."
+                                                ".	.	.	CO	CO	.	P3	ES	ES	ES	ES	ES	ES	P4	.	C6	C6	.	.	."
+                                                ".	.	.	CO	CO	.	P3	ES	ES	ES	ES	ES	ES	P4	.	C6	C6	.	.	."
+                                                ".	.	.	CO	CO	.	P3	S1	S1	S1	S1	S1	S1	P4	.	C6	C6	.	.	."
+                                                "SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK"
+                                                "SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK"
+                                                "SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK"
+                                                "SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK";
+                        #snake{
+                            grid-area: SK;
+                        }
+                        #snake1{
+                            grid-area: S1;
+                        }
+                        #columns{
+                            grid-area: CO;
+                        }
+                        #columns1{
+                            grid-area: C6;
+                        }
+                        #heads{
+                            grid-area: HD;
+                        }
+                        #heads1{
+                            grid-area: H1;
+                        }
+                        #portico{
+                            grid-area: PO;
+                        }
+                        #portico1{
+                            grid-area: P1;
+                        }
+                        #portico2{
+                            grid-area: P2;
+                        }
+                        #portico3{
+                            grid-area: P3;
+                        }
+                        #portico4{
+                            grid-area: P4;
+                        }
+                        #cupula{
+                            grid-area: CU;
+                        }
+                        #cupula1{
+                            grid-area: C1;
+                        }
+                        #columnas12{
+                            grid-area: CL;
+                        }
+                        #columnas12a{
+                            grid-area: C2;
+                        }
+                        #eye{
+                            grid-area: EY;
+                        }
+                        #circulo{
+                            grid-area: CI;
+                        }
+                        #circulo1{
+                            grid-area: C3;
+                        }
+                        #circulo2{
+                            grid-area: C4;
+                        }
+                        #circulo3{
+                            grid-area: C5;
+                        }
+                        #triangulo{
+                            grid-area: TR;
+                        }
+                        #escalera{
+                            grid-area: ES;
+                        }
+                    }
+                }
+                div.der{
+                    margin: 10px 20px;
+                    div.puntitos{
+                        display: grid;
+                        width: 140px;
+                        grid-template-columns: 1fr fr;
+                        grid-template-rows: 1fr fr;
+                        grid-template-areas: "simbolo simbolo"
+                                             "estetica album"; 
+                        div.simbolo{
+                            grid-area: simbolo;
+                        }
+                        div.estetica{
+                            grid-area: estetica;
+                        }
+                        div.album{
+                            grid-area: album;
+                        }
+                        div{
+                           text-align: center;
+                           margin: auto;
+                            div.puntoAmarillo{
+                                height: 14px;
+                                width: 14px;
+                                background-color: $blanco;
+                                border-radius: 14px;
+                            }
+                            p{
+                                min-width: 70px;
+                                padding-top: 7px;
+                                margin-bottom: 7px;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                font-size: 12px;
+                                color: $amarillo;
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    div.descripcionTapa{
+                        position: relative;
+                        width: 100%;
+                        div{
+                            overflow-y: auto; /* o scroll */
+                            height: 390px;
+                            p{
+                                padding-top: 10px;
+                                color: $blanco;
+                                font-size: 13px;
+                                padding-right: 15px;
+                                padding-left: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+    display: initial;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(218, 218, 218); 
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

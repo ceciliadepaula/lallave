@@ -72,20 +72,120 @@
 
         <!-- INTRODUCCIÓN COLUMNAS -->
         <section id="textoColumnas">
-            <img src="/images/columnaIzq.png" alt="Columna" class="columnas">
-            <p class="blanco justificado">
+            <div id=columnaIzq>
+                <img src="/images/columnaIzq.png" alt="Columna" class="columnas">
+            </div>
+            <div class="txt">
+                <p class="blanco justificado">
                 La masonería es una organización de libre pensamiento, filantrópica, jerárquica, 
                 esotérica, hermética, de carácter iniciático y discreta, en la que sus conocimientos e intenciones en busca de 
                 la verdad nunca son revelados a los profanos, es decir a los no iniciados. 
                 <br>
                 Los principios de la masonería se basan en los valores de libertad, igualdad y fraternidad. Estos son los 
-                valores liberales que moldearon las leyes y educación de la sociedad moderna occidental.</p>
+                valores liberales que moldearon las leyes y educación de la sociedad moderna occidental.
+                </p>
+            </div>
+            
             <div id="columnaDerecha">
                 <img src="/images/columnaDer.png" alt="Columna" class="columnas">
             </div>
         </section>
 
-        <!-- MASONERÍA -->
+        <!-- GALERÍA DISCOS -->
+        <section id="perspectivas">
+
+            <div class="contenedorImg">
+               <!--  <img src="../images/triangulo_perspectiva.svg" alt="Camino masónico" id="caminoMason"> -->
+                <img src="../images/triangulo_discos_amarillo.svg" alt="Camino masónico" id="palabraDiscoAmarillo">
+                
+                <div id="portadasSolas">
+                    <div><img src="../images/portada1.png" alt="T" id="pd1"></div>
+                    <div style="cursor: pointer"><img src="../images/portada2.png" alt="T" id="pd2" data-bs-toggle="modal" data-bs-target="#portada2"></div>
+                    <div><img src="../images/portada3.png" alt="T" id="pd3"></div>
+                    <div><img src="../images/portada4.png" alt="T" id="pd4"></div>
+                    <div><img src="../images/portada5.png" alt="T" id="pd5"></div>
+                    <div><img src="../images/portada6.png" alt="T" id="pd6"></div>
+                    <div><img src="../images/portada7.png" alt="T" id="pd7"></div>
+                    <div><img src="../images/portada8.png" alt="T" id="pd8"></div>
+                    <div><img src="../images/portada9.png" alt="T" id="pd9"></div>
+                    <div><img src="../images/portada10.png" alt="T" id="pd10"></div>
+
+                    <div><img src="../images/portada11.png" alt="T" id="pd11"></div>
+                    <div><img src="../images/portada12.png" alt="T" id="pd12"></div>
+                    <div><img src="../images/portada13.png" alt="T" id="pd13"></div>
+                    <div><img src="../images/portada14.png" alt="T" id="pd14"></div>
+                    <div><img src="../images/portada15.png" alt="T" id="pd15"></div>
+                    <div><img src="../images/portada16.png" alt="T" id="pd16"></div>
+                    <div><img src="../images/portada17.png" alt="T" id="pd17"></div>
+                    <div><img src="../images/portada18.png" alt="T" id="pd18"></div>
+                    <div><img src="../images/portada19.png" alt="T" id="pd19"></div>
+                    <div><img src="../images/portada20.png" alt="T" id="pd20"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="portada2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="izq">
+                            <div class="grillaCrows">
+                                <div id="snake"></div>
+                                <div id="snake1"></div>
+                                <div id="columns"></div>
+                                <div id="columns1"></div>
+                                <div id="heads"></div>
+                                <div id="heads1"></div>
+                                <div id="portico"></div>
+                                <div id="portico1"></div>
+                                <div id="portico2"></div>
+                                <div id="portico3"></div>
+                                <div id="portico4"></div>
+                                <div id="cupula"></div>
+                                <div id="cupula1"></div>
+                                <div id="columnas12"></div>
+                                <div id="columnas12a"></div>
+                                <div id="eye"></div>
+                                <div id="circulo"></div>
+                                <div id="circulo1"></div>
+                                <div id="circulo2"></div>
+                                <div id="circulo3"></div>
+                                <div id="triangulo"></div>
+                                <div id="escalera"></div>
+                            </div>
+                            <div class="imagenTapa">
+                                <img src="images/p2_Crows.jpg" alt="imagen Tapa Crows" id="imagenTapaCrows">
+                            </div>
+                        </div>
+                        
+                        <div class="der">
+                            <div class="puntitos">
+                                <div class="simbolo">
+                                    <div class="puntoAmarillo" id="puntoSimbolos"></div>
+                                    <p id="palabraSimbolo">Símbolos</p>
+                                </div>
+                                <div class="estetica">
+                                    <div class="puntoAmarillo" id="puntoEstetica"></div>
+                                    <p id="palabraEstetica">Estética</p>
+                                </div>
+                                <div class="album">
+                                    <div class="puntoAmarillo" id="puntoAlbum"></div>
+                                    <p id="palabraAlbum">Álbum</p>
+                                </div>
+                            </div>
+                            <div class="descripcionTapa" >
+                                <div>
+                                    <p id="textoModal"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
 
@@ -98,5 +198,6 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="scripts/animacionPresentacion.js"></script>
+    <script src="scripts/modales.js"></script>
 </body>
 </html>

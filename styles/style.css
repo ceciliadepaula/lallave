@@ -5,6 +5,9 @@
 body {
   background-color: #000000;
   font-family: "Open Sans", sans-serif;
+  max-width: 1500px;
+  /* 1366? */
+  margin: auto;
 }
 
 .blanco {
@@ -22,10 +25,16 @@ body {
           hyphens: auto;
 }
 
-/* establecer max width  1366 !!!!!!!!!!!!*/
 /* BARRA NAVEGACIÓN */
 #barraNavegacion {
-  opacity: 0;
+  /* opacity: 0; */
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+  padding-bottom: 10px;
+  z-index: 10;
+  max-width: 1500px;
+  margin: auto;
 }
 
 #barraNavegacion ul {
@@ -60,12 +69,17 @@ body {
 }
 
 #presentacion {
+  height: calc(100vh - 100px);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  border: blue 1px solid;
+  position: relative;
+  top: 100px;
+  padding-top: calc((100vh - 580px)/2);
 }
 
 #presentacion #llaveCerrojo #compasImg, #presentacion #llaveCerrojo #llaveOjoImg {
@@ -153,6 +167,7 @@ body {
 }
 
 #textoColumnas {
+  border: green 1px solid;
   margin-top: 200px;
   display: -ms-grid;
   display: grid;
@@ -160,17 +175,41 @@ body {
       grid-template-columns: 1fr 2fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  position: relative;
+  top: -100px;
+  height: calc(100vh - 100px);
 }
 
 #textoColumnas .columnas {
   height: 600px;
 }
 
+#textoColumnas #columnaIzq,
 #textoColumnas #columnaDerecha {
-  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#textoColumnas p::first-letter {
+#textoColumnas #columnaDerecha {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#textoColumnas div.txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#textoColumnas div.txt p::first-letter {
   font-size: 125px;
   font-family: "Gentium Basic", serif;
   margin-right: 15px;
@@ -181,23 +220,324 @@ body {
 
 /* @import 'perspectiva'; */
 section#perspectivas {
-  /* margin: auto;
-    max-width: 2000px; */
+  max-width: 1200px;
+  margin: auto;
+  height: calc(100vh - 100px);
+  border: burlywood 1px solid;
+  position: relative;
+  top: -100px;
 }
 
-section#perspectivas img {
-  width: 100%;
-  /* max-width: 2000px; */
+section#perspectivas div.contenedorImg {
+  height: 100%;
+}
+
+section#perspectivas div.contenedorImg img {
+  max-width: 1200px;
   position: absolute;
   bottom: 0;
 }
 
-section#perspectivas div#grilla {
-  border: 1px solid red;
-  height: calc(40vh);
-  width: 100%;
+section#perspectivas div.contenedorImg div#portadasSolas {
+  /* position: initial;
+            display: flex;
+            flex-direction: row; */
+  height: 520px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 235px 138px 74px 45px 30px 22px 17px 14px 12px 12px 13px 10px 14px 17px 25px 29px 45px 74px 128px 246px;
+      grid-template-columns: 235px 138px 74px 45px 30px 22px 17px 14px 12px 12px 13px 10px 14px 17px 25px 29px 45px 74px 128px 246px;
+  /* grid-template-columns: repeat(20, mincontent); */
+}
+
+section#perspectivas div.contenedorImg div#portadasSolas div {
+  opacity: 0.35;
+}
+
+section#perspectivas div.contenedorImg div#portadasSolas div:hover {
+  opacity: 1;
+}
+
+div.modal.fade div.modal-dialog {
+  min-width: 70vw;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000000;
+  padding-right: 0;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq {
+  height: 500px;
+  width: 500px;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows {
+  position: absolute;
+  top: 0;
+  height: 500px;
+  width: 500px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ".	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	." ".	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	." ".	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	." ".	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	." ".	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	." ".	.	.	.	.	.	PO	PO	PO	PO	PO	PO	PO	PO	.	.	.	.	.	." ".	.	.	.	.	.	P1	P1	CU	CU	CU	CU	P2	P2	.	.	.	.	.	." ".	.	.	.	.	.	P3	C1	C1	C1	C1	C1	C1	P4	.	.	.	.	.	." ".	.	.	.	.	.	P3	CL	CI	CI	CI	CI	C2	P4	.	.	.	.	.	." ".	.	.	HD	HD	.	P3	CL	C3	EY	EY	C4	C2	P4	.	H1	H1	.	.	." ".	.	.	HD	HD	.	P3	CL	C5	C5	C5	C5	C2	P4	.	H1	H1	.	.	." ".	.	.	HD	HD	.	P3	CL	TR	TR	TR	TR	C2	P4	.	H1	H1	.	.	." ".	.	.	CO	CO	.	P3	ES	ES	ES	ES	ES	ES	P4	.	C6	C6	.	.	." ".	.	.	CO	CO	.	P3	ES	ES	ES	ES	ES	ES	P4	.	C6	C6	.	.	." ".	.	.	CO	CO	.	P3	ES	ES	ES	ES	ES	ES	P4	.	C6	C6	.	.	." ".	.	.	CO	CO	.	P3	S1	S1	S1	S1	S1	S1	P4	.	C6	C6	.	.	." "SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK" "SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK" "SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK" "SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK	SK";
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #snake {
+  -ms-grid-row: 17;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 20;
+  grid-area: SK;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #snake1 {
+  -ms-grid-row: 16;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 6;
+  grid-area: S1;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #columns {
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: CO;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #columns1 {
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 16;
+  -ms-grid-column-span: 2;
+  grid-area: C6;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #heads {
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: HD;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #heads1 {
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 16;
+  -ms-grid-column-span: 2;
+  grid-area: H1;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #portico {
+  -ms-grid-row: 6;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 8;
+  grid-area: PO;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #portico1 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-area: P1;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #portico2 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 13;
+  -ms-grid-column-span: 2;
+  grid-area: P2;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #portico3 {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 7;
+  grid-area: P3;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #portico4 {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 14;
+  grid-area: P4;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #cupula {
+  -ms-grid-row: 7;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: CU;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #cupula1 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 6;
+  grid-area: C1;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #columnas12 {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 8;
+  grid-area: CL;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #columnas12a {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 13;
+  grid-area: C2;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #eye {
+  -ms-grid-row: 10;
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 2;
+  grid-area: EY;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #circulo {
+  -ms-grid-row: 9;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: CI;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #circulo1 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 9;
+  grid-area: C3;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #circulo2 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 12;
+  grid-area: C4;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #circulo3 {
+  -ms-grid-row: 11;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: C5;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #triangulo {
+  -ms-grid-row: 12;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: TR;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.izq .grillaCrows #escalera {
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 6;
+  grid-area: ES;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der {
+  margin: 10px 20px;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.puntitos {
+  display: -ms-grid;
+  display: grid;
+  width: 140px;
+  -ms-grid-columns: 1fr fr;
+      grid-template-columns: 1fr fr;
+  -ms-grid-rows: 1fr fr;
+      grid-template-rows: 1fr fr;
+      grid-template-areas: "simbolo simbolo" "estetica album";
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.puntitos div.simbolo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: simbolo;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.puntitos div.estetica {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: estetica;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.puntitos div.album {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: album;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.puntitos div {
+  text-align: center;
+  margin: auto;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.puntitos div div.puntoAmarillo {
+  height: 14px;
+  width: 14px;
+  background-color: #ffffff;
+  border-radius: 14px;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.puntitos div p {
+  min-width: 70px;
+  padding-top: 7px;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffe000;
+  opacity: 0;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.descripcionTapa {
   position: relative;
-  top: 30px;
-  top: calc(22vh);
+  width: 100%;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.descripcionTapa div {
+  overflow-y: auto;
+  /* o scroll */
+  height: 390px;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.descripcionTapa div p {
+  padding-top: 10px;
+  color: #ffffff;
+  font-size: 13px;
+  padding-right: 15px;
+  padding-left: 28px;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  display: initial;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dadada;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 /*# sourceMappingURL=style.css.map */

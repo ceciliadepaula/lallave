@@ -1,20 +1,33 @@
 #textoColumnas{
+    border: green 1px solid;
     margin-top: 200px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
+    position: relative;
+    top: -100px;
+    height: calc(100vh - 100px);
     .columnas{
         height: 600px;
     }
+    #columnaIzq,
     #columnaDerecha{
-        text-align: right; 
+        display: flex;
+        align-items: center;
     }
-    p::first-letter{
-        font-size: 125px;
-        font-family: $gentium;
-        margin-right: 15px;
-        margin-top: -42px;
-        margin-bottom: -60px;
-        float:left;
+    #columnaDerecha{
+        justify-content: flex-end;
+    }
+    div.txt {
+        display: flex;
+        align-items: center;
+        p::first-letter{
+            font-size: 125px;
+            font-family: $gentium;
+            margin-right: 15px;
+            margin-top: -42px;
+            margin-bottom: -60px;
+            float:left;
+        }
     }
 }
