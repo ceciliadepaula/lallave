@@ -25,6 +25,14 @@ body {
           hyphens: auto;
 }
 
+.bloqueado {
+  cursor: no-drop;
+}
+
+.manito {
+  cursor: pointer;
+}
+
 /* BARRA NAVEGACIÓN */
 #barraNavegacion {
   opacity: 0;
