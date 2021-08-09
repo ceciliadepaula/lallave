@@ -145,15 +145,21 @@ div.modal.fade{
                     div.descripcionTapa{
                         position: relative;
                         width: 100%;
-                        div{
+                        div#textoImgModal{
                             overflow-y: auto; /* o scroll */
                             height: 390px;
-                            p{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            p#textoModal{
                                 padding-top: 10px;
                                 color: $blanco;
                                 font-size: 13px;
                                 padding-right: 15px;
                                 padding-left: 28px;
+                            }
+                            img{
+                                max-width: 300px;
                             }
                         }
                     }

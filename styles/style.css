@@ -506,18 +506,32 @@ div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.des
   width: 100%;
 }
 
-div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.descripcionTapa div {
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.descripcionTapa div#textoImgModal {
   overflow-y: auto;
   /* o scroll */
   height: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.descripcionTapa div p {
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.descripcionTapa div#textoImgModal p#textoModal {
   padding-top: 10px;
   color: #ffffff;
   font-size: 13px;
   padding-right: 15px;
   padding-left: 28px;
+}
+
+div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.descripcionTapa div#textoImgModal img {
+  max-width: 300px;
 }
 
 /* Scroll bar */
