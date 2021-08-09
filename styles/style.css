@@ -33,6 +33,12 @@ body {
   cursor: pointer;
 }
 
+p.aclaracion {
+  padding-top: 20px;
+  color: #808184;
+  font-size: 12px;
+}
+
 /* BARRA NAVEGACIÓN */
 #barraNavegacion {
   opacity: 0;
