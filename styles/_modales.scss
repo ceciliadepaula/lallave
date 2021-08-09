@@ -169,6 +169,22 @@ div.modal.fade{
     }
 }
 
+div.flechaModal{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    p#textoModal{
+        padding: 0 0 0 15px !important;
+        margin: 0!important;
+    }
+    .fa-caret-left{
+        color: $amarillo;
+        font-size: 30px;
+        padding-left: 28px;
+    }
+}
+
 /* Scroll bar */
 
 ::-webkit-scrollbar {

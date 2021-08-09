@@ -24,7 +24,7 @@ function PuntoSimbolo(){
     palabraEstetica.style.opacity = "0";
     palabraAlbum.style.opacity = "0";
 
-    textoImgModal.innerHTML = "<p id='textoModal'> </p>";
+    textoImgModal.innerHTML = "<p id='textoModal'> En el tema de la portada se representa la entrada al templo masónico, donde se pueden ver los dos pilares y escalinatas que llevan hacia el altar donde se encuentra el ojo de la providencia. <br><br></p><div class='flechaModal'><i class='fas fa-caret-left'></i><p id='textoModal'>Descubre los símbolos en la portada </p>"
 }
 
 function puntoEstetic(){
@@ -36,7 +36,7 @@ function puntoEstetic(){
     palabraAlbum.style.opacity = "0";
 
     imagenTapa.src="../images/p2_Crows.jpg";
-    textoImgModal.innerHTML = "<p id='textoModal'> El diseñador Elliott Lane para esta portada trabajó con ausencia de color, con formas icónicas planas y lineales blancas sobre fondo negro, logrando un juego visual de figura y fondo que se asemeja al código visual del arte vectorial. </p> <br> <img src='../images/vectorial.jpg'> <br> <img src='../images/vectorial2.jpg'> <br> <img src='../images/vectorial3.jpg'> <br> <p id='textoModal'>Para la composición el artista utilizó un punto de fuga frontal que resalta la simetría vertical del templo masónico.</p> <br> <img class='ml-2 mt-2' src='../images/simetria.png'> <br>";
+    textoImgModal.innerHTML = "<p id='textoModal'> El diseñador Elliott Lane para esta portada trabajó con ausencia de color, con formas icónicas planas y lineales blancas sobre fondo negro, logrando un juego visual de figura y fondo que se asemeja al código visual del arte vectorial. </p> <br> <img src='../images/vectorial.jpg'> <br> <img src='../images/vectorial2.jpg'> <br> <img src='../images/vectorial3.jpg'> <br> <p id='textoModal'>Para la composición el artista utilizó un punto de fuga frontal que resalta la simetría vertical del templo masónico.</p> <br> <img class='ml-2 mt-2' src='../images/simetria.jpg'> <br>";
 }
 
 function puntoAlbu(){
@@ -127,14 +127,14 @@ escalera.addEventListener("mouseover", Escalera);
 /* FUNCIONES DE CAMBIO DE IMAGEN HOVER */
 
 function Snake(){
-    imagenTapa.src="../images/snakes.png";
+    imagenTapa.src="../images/snakes.jpg";
     PuntoSimbolo();
     textoImgModal.innerHTML = "<p id='textoModal'><strong>Serpientes</strong> <br><br> La serpiente representa al infinito, la espiritualidad, sabiduría y fuerza creativa. Representa al Caballero de la serpiente de bronce. <br><br> La serpiente enroscada en una columna simboliza la búsqueda interior de la trascendencia divina.</p>"
 
 }
 
 function Columns(){
-    imagenTapa.src="../images/columns.png";
+    imagenTapa.src="../images/columns.jpg";
     PuntoSimbolo();
     textoImgModal.innerHTML = "<p id='textoModal'><strong>Pilares</strong> <br><br> Los dos pilares representan a las columnas del Templo masónico, llamadas Jakin (izquierda) y Boaz (derecha). <br> <br> La primera simboliza el estádo natural y primogénito del iniciado, la piedra en bruto, mientras que la segunda es símbolo del trabajo y conocimiento adquirido del masón, la piedra pulida.</p>"
 }
@@ -180,7 +180,7 @@ function Triangulo(){
 }
 
 function Escalera(){
-    imagenTapa.src="../images/escalera.png";
+    imagenTapa.src="../images/escalera.jpg";
     PuntoSimbolo();
     textoImgModal.innerHTML = "<p id='textoModal'><strong>Escalinata</strong> <br><br> Representa a la escalera de Jacob, y simboliza el ascenso a la dignidad perseguida por el masón. Los siete peldaños se asocian a las siete virtudes que debe atravesar y dominar el Maestro masón; estos son: la Prudencia, Templanza, Fortaleza, Justicia, Fe, Esperanza y Caridad. Cada una de estas siete virtudes también se interpretan como: La primera existencia (plomo y saturno), el Mundo de la vida primitiva (azogue y Mercurio), los Cielos (cobre y Venus), la Mitad de la vida (estaño y Júpiter), el Mundo de los orígenes (hierro y Marte), la Mansión de los justos (plata y Luna) y la Verdad (oro y Sol).<br><br>Dentro de las ciencias representan: la gramática, retórica, lógica, aritmética, geometría, música y astronomía.</p>"
 }

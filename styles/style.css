@@ -82,6 +82,10 @@ body {
   padding-top: calc((100vh - 580px)/2);
 }
 
+#presentacion #llaveCerrojo {
+  cursor: pointer;
+}
+
 #presentacion #llaveCerrojo #compasImg, #presentacion #llaveCerrojo #llaveOjoImg {
   position: absolute;
   width: 380px;
@@ -532,6 +536,30 @@ div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.des
 
 div.modal.fade div.modal-dialog div.modal-content div.modal-body div.der div.descripcionTapa div#textoImgModal img {
   max-width: 300px;
+}
+
+div.flechaModal {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.flechaModal p#textoModal {
+  padding: 0 0 0 15px !important;
+  margin: 0 !important;
+}
+
+div.flechaModal .fa-caret-left {
+  color: #ffe000;
+  font-size: 30px;
+  padding-left: 28px;
 }
 
 /* Scroll bar */
