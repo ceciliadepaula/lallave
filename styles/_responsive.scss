@@ -1,0 +1,31 @@
+@media (max-width: 1250px) {
+    #barraNavegacion,
+    section#presentacion,
+    #textoColumnas,
+    #perspectivas,
+    footer{
+        display: none !important;
+    }
+
+    section#pptCelular{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        img{
+            margin-bottom: 20px;
+        }
+        h1#laLLaveTitulo{
+            color: $gris;
+            font-family: $gentium;
+            font-size: 550%;
+        }
+        p{
+            color: white;
+            width: 80vw;
+            max-width: 400px;
+            text-align: center;
+        }
+    }
+}

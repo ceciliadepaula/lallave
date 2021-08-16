@@ -42,7 +42,6 @@ p.aclaracion {
 /* BARRA NAVEGACIÓN */
 #barraNavegacion {
   opacity: 0;
-  /* ------------- */
   position: fixed;
   width: 100%;
   background-color: #000000;
@@ -83,7 +82,11 @@ p.aclaracion {
   height: 39px;
 }
 
-#presentacion {
+section#pptCelular {
+  display: none;
+}
+
+section#presentacion {
   height: calc(100vh - 100px);
   display: -ms-grid;
   display: grid;
@@ -96,25 +99,25 @@ p.aclaracion {
   padding-top: calc((100vh - 580px)/2);
 }
 
-#presentacion #llaveCerrojo {
+section#presentacion #llaveCerrojo {
   cursor: pointer;
 }
 
-#presentacion #llaveCerrojo #compasImg, #presentacion #llaveCerrojo #llaveOjoImg {
+section#presentacion #llaveCerrojo #compasImg, section#presentacion #llaveCerrojo #llaveOjoImg {
   position: absolute;
   width: 380px;
   margin-top: 20px;
 }
 
-#presentacion #llaveCerrojo #compasImg {
+section#presentacion #llaveCerrojo #compasImg {
   opacity: 0;
 }
 
-#presentacion #llaveCerrojo #llaveOjoImg {
+section#presentacion #llaveCerrojo #llaveOjoImg {
   opacity: 1;
 }
 
-#presentacion #llaveCerrojo #ingresar {
+section#presentacion #llaveCerrojo #ingresar {
   font-weight: bold;
   font-size: 14px;
   text-align: center;
@@ -122,19 +125,19 @@ p.aclaracion {
   opacity: 1;
 }
 
-#presentacion #textoIntroduccion #laLLaveTitulo {
+section#presentacion #textoIntroduccion #laLLaveTitulo {
   color: #808184;
   font-family: "Gentium Basic", serif;
   font-size: 160px;
   padding-top: 25px;
 }
 
-#presentacion #textoIntroduccion .textoIntro {
+section#presentacion #textoIntroduccion .textoIntro {
   font-size: 17px;
   margin-top: -15px;
 }
 
-#presentacion #llaveAntigua #llaveAntImg {
+section#presentacion #llaveAntigua #llaveAntImg {
   width: 250px;
   margin-top: 25px;
   margin-left: 25px;
@@ -600,5 +603,45 @@ footer p {
   font-size: 14px;
   color: #ffffff;
   text-align: center;
+}
+
+@media (max-width: 1250px) {
+  #barraNavegacion,
+  section#presentacion,
+  #textoColumnas,
+  #perspectivas,
+  footer {
+    display: none !important;
+  }
+  section#pptCelular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  section#pptCelular img {
+    margin-bottom: 20px;
+  }
+  section#pptCelular h1#laLLaveTitulo {
+    color: #808184;
+    font-family: "Gentium Basic", serif;
+    font-size: 550%;
+  }
+  section#pptCelular p {
+    color: white;
+    width: 80vw;
+    max-width: 400px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
