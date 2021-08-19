@@ -642,6 +642,41 @@ footer p {
     width: 80vw;
     max-width: 400px;
     text-align: center;
+    font-size: 14px;
+  }
+  #demoBoton {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  #demoBoton a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+  }
+  #demoBoton:hover {
+    background-color: #808184;
+  }
+  #demoBoton:hover a {
+    color: #ffffff;
+  }
+  #demoBoton:active {
+    background-color: #ffffff;
+  }
+  #demoBoton:active a {
+    color: #000000;
+  }
+  div#modalCelular div.modal-dialog div.modal-content div.modal-body iframe {
+    width: 95vw;
+    height: calc( (95vw*315) / 560);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

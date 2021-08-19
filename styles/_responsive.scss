@@ -26,6 +26,47 @@
             width: 80vw;
             max-width: 400px;
             text-align: center;
+            font-size: 14px;
+        }
+    }
+
+    #demoBoton{
+        background-color: $blanco;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 14px;
+        a{
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $negro;
+            text-decoration: none;
+        }
+    }
+    #demoBoton:hover{
+        background-color: $gris;
+        a{
+            color: $blanco;
+        }
+    }
+    #demoBoton:active{
+        background-color: $blanco;
+        a{
+            color: $negro;
+        }
+    }
+
+    div#modalCelular{
+        div.modal-dialog{
+            div.modal-content{
+                div.modal-body{
+                    iframe{
+                        width: 95vw;
+                        height: calc( (95vw*315) / 560 );
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
         }
     }
 }
