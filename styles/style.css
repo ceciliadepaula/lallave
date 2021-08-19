@@ -627,7 +627,8 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100vh;
+    height: 90vh;
+    margin-top: 10px;
   }
   section#pptCelular img {
     margin-bottom: 20px;
