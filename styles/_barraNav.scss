@@ -10,7 +10,7 @@
     margin: auto;
     ul{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         margin: auto;
         li {
             list-style-image: url(/images/puntitosBlancos.svg);
@@ -32,4 +32,8 @@
         background-repeat: repeat-x;
         height: 39px;
     }
+}
+
+#barraNavegacion.otrasPaginas{
+    opacity: 1;
 }

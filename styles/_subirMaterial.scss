@@ -1,0 +1,78 @@
+section.subirMaterial{
+    padding-top: 110px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $blanco;
+    div.textoExplicativo{
+        max-width: 500px;
+        p{
+            text-align: center;
+        }
+    }
+    div#login{
+        width: 400px;
+        margin: 20px 0;
+        border: $blanco 3px solid;
+        border-radius: 20px;
+        background-color: $gris;
+        padding: 30px 20px;
+        h2{
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        form{
+            div{
+                input{
+                    background-color: $negro;
+                    border: none;
+                    color: $blanco;
+                }
+                input:focus{
+                    box-shadow: none;
+                }
+            }
+            button{
+                background-color: $blanco;
+                border: none;
+                color: $negro;
+                font-weight: bold;
+                width: 100%;
+            }
+            button:hover{
+                background-color: $negro;
+                color: $blanco
+            }
+            button:active{
+                background-color: $blanco;
+                color: $negro
+            }
+            button:focus{
+                box-shadow: none;
+            }
+        }
+        div.centrado{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            a{
+                color: $blanco;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            a:hover{
+                color: $negro;
+            }
+            a:active{
+                color: $blanco;
+            }
+        }
+    }
+}
+
+::placeholder {
+    color: $blanco!important;
+}

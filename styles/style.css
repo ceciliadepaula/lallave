@@ -54,8 +54,8 @@ p.aclaracion {
 #barraNavegacion ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin: auto;
 }
 
@@ -80,6 +80,10 @@ p.aclaracion {
   background-image: url("/images/lazo.svg");
   background-repeat: repeat-x;
   height: 39px;
+}
+
+#barraNavegacion.otrasPaginas {
+  opacity: 1;
 }
 
 section#pptCelular {
@@ -597,6 +601,122 @@ div.flechaModal .fa-caret-left {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+section.subirMaterial {
+  padding-top: 110px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+}
+
+section.subirMaterial div.textoExplicativo {
+  max-width: 500px;
+}
+
+section.subirMaterial div.textoExplicativo p {
+  text-align: center;
+}
+
+section.subirMaterial div#login {
+  width: 400px;
+  margin: 20px 0;
+  border: #ffffff 3px solid;
+  border-radius: 20px;
+  background-color: #808184;
+  padding: 30px 20px;
+}
+
+section.subirMaterial div#login h2 {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+section.subirMaterial div#login form div input {
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+}
+
+section.subirMaterial div#login form div input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section.subirMaterial div#login form button {
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+  width: 100%;
+}
+
+section.subirMaterial div#login form button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+section.subirMaterial div#login form button:active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+section.subirMaterial div#login form button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section.subirMaterial div#login div.centrado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+section.subirMaterial div#login div.centrado a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section.subirMaterial div#login div.centrado a:hover {
+  color: #000000;
+}
+
+section.subirMaterial div#login div.centrado a:active {
+  color: #ffffff;
+}
+
+::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+
+:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+::-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+::placeholder {
+  color: #ffffff !important;
 }
 
 footer p {
