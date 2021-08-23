@@ -1,7 +1,15 @@
 footer{
+    margin-top: 20px;
     p{
         font-size: 14px;
         color: $blanco;
         text-align: center;
     }
+}
+
+footer#footer.otroMaterial{
+    position:relative;
+    bottom:0;
+    width: 90%;
+    margin: auto;
 }

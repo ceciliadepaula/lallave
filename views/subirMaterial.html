@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- Título -->
-    <title>La llave</title>
+    <title>La llave | Sube tu material</title>
     <link rel="icon" type="image/svg" href="../images/laLlave.svg">
 
 </head>
@@ -40,22 +40,55 @@
             <li>
                 <a href="#perspectivas">Portadas</a>
             </li>
-            <li>
-                <a href="#">Participar</a>
-            </li>
         </ul>
         <div id="lazo"></div>
     </nav>
 
     <main>
         <section class="subirMaterial">
-            sss
+            <h4>Seleccione qué tipo de portada quiere incluir:</h4>
+            <div id="tipoPortadasSubir">
+                <div class="discos">
+                    <a data-bs-toggle="modal" data-bs-target="#modalSubirMaterial">Discos</a>
+                </div>
+                <div class="peliculas">
+                    <a data-bs-toggle="modal" data-bs-target="#modalSubirMaterial">Películas</a>
+                </div>
+                <div class="libros">
+                    <a data-bs-toggle="modal" data-bs-target="#modalSubirMaterial">Libros</a>
+                </div>
+            </div>
+
+            <!-- Modal celular -->
+            <div class="modal fade" id="modalSubirMaterial" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <form action="/index.html" method="get">
+                                <div id="arrestreArchivo">
+                                    <img src="../images/file-image-regular.svg" alt="Ícono de hoja con doblez, con logo de imagen dentro">
+                                    <p>Elija el archivo <br> de su sistema <br> o sueltelo aquí</p>
+                                    <input id="archivo" type="file" name="archivosubido">
+                                </div>
+                                <p>*Indique cuáles son los símbolos que detecta en la portada <br> y nómbrelos dentro de estas dos categorías</p>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="abstracto" placeholder="* Abstractos" >
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="figurativo" placeholder="* Figurativos" >
+                                </div>
+                                <button type="submit" class="btn btn-primary"> Enviar </button>
+                            </form>
+                            <p class="aclaracion">*Opcional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-
-
-    <footer id="footer">
+    <footer id="footer" class="otroMaterial">
         <p>© Nicolás Federico López | FADU | UNL | 2019 - 2021</p>
     </footer>
 
@@ -67,6 +100,34 @@
         crossorigin="anonymous"></script>
     <script src="scripts/animacionPresentacion.js"></script>
     <script src="scripts/modales.js"></script>
+
+    <script>
+        function dropHandler(ev) {
+            console.log('Fichero(s) arrastrados');
+
+            // Evitar el comportamiendo por defecto (Evitar que el fichero se abra/ejecute)
+            ev.preventDefault();
+
+            if (ev.dataTransfer.items) {
+                // Usar la interfaz DataTransferItemList para acceder a el/los archivos)
+                for (var i = 0; i < ev.dataTransfer.items.length; i++) {
+                    // Si los elementos arrastrados no son ficheros, rechazarlos
+                    if (ev.dataTransfer.items[i].kind === 'file') {
+                        var file = ev.dataTransfer.items[i].getAsFile();
+                        console.log('... file[' + i + '].name = ' + file.name);
+                    }
+                }
+            } else {
+                // Usar la interfaz DataTransfer para acceder a el/los archivos
+                for (var i = 0; i < ev.dataTransfer.files.length; i++) {
+                    console.log('... file[' + i + '].name = ' + ev.dataTransfer.files[i].name);
+                }
+            }
+
+            // Pasar el evento a removeDragData para limpiar
+            removeDragData(ev)
+        }
+    </script>
 
 </body>
 

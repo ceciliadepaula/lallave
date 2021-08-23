@@ -1,11 +1,11 @@
 section.subirMaterial{
     padding-top: 110px;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: $blanco;
+    margin-bottom: 20px;
     div.textoExplicativo{
         max-width: 500px;
         p{
@@ -71,8 +71,133 @@ section.subirMaterial{
             }
         }
     }
+    div#tipoPortadasSubir{
+        width: 80vw;
+        height: calc(100vh - 220px);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            background-color: $gris;
+            border: $blanco 3px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                color: $blanco;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                cursor: pointer;
+                padding: 90px 0;
+            }
+        }
+        div:hover{
+            background-color: $blanco;
+            border: $gris 3px solid;
+            a{
+                color: $gris;
+            }
+        }
+        div.discos{
+            width: 170px;
+            height: 170px;
+        }   
+        div.peliculas,
+        div.libros{
+            height: 220px;
+            width: 170px;
+        }
+    }
+    div#modalSubirMaterial{
+        div.modal-dialog{
+            div.modal-content{
+                div.modal-body{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    div#arrestreArchivo{
+                        background-color: $gris;
+                        border: $blanco 3px solid;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 170px;
+                        margin: 10px auto;
+                        padding: 30px 0;
+                        p{
+                            color: $blanco;
+                            text-align: center;
+                            cursor: pointer;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        img{
+                            padding-bottom: 10px;
+                            width: 40px;
+                            filter: invert(100%);
+                        }
+                    }
+                    div#arrestreArchivo:hover{
+                        background-color: $blanco;
+                        border: $gris 3px solid;
+                        p{
+                            color: $gris;
+                        }
+                        img{
+                            filter: invert(0%);
+                        }
+                    }
+                    form{
+                        width: 40vw;
+                        margin: auto;
+                        p{
+                            margin-top: 20px;
+                        }
+                        div{
+                            input{
+                                background-color: $gris;
+                                border: none;
+                                color: $blanco;
+                            }
+                            input:focus{
+                                box-shadow: none;
+                            }
+                        }
+                        button{
+                            background-color: $blanco;
+                            border: none;
+                            color: $negro;
+                            font-weight: bold;
+                            width: 100%;
+                        }
+                        button:hover{
+                            background-color: $gris;
+                            color: $blanco
+                        }
+                        button:active{
+                            background-color: $blanco;
+                            color: $negro
+                        }
+                        button:focus{
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 ::placeholder {
     color: $blanco!important;
+}
+
+input#archivo{
+    opacity: 0;
+    position: absolute;
+    padding-top: 165px;
+    cursor: pointer;
 }

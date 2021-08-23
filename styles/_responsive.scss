@@ -31,31 +31,6 @@
         }
     }
 
-    #demoBoton{
-        background-color: $blanco;
-        padding: 10px 20px;
-        border-radius: 10px;
-        font-size: 14px;
-        a{
-            text-transform: uppercase;
-            font-weight: 600;
-            color: $negro;
-            text-decoration: none;
-        }
-    }
-    #demoBoton:hover{
-        background-color: $gris;
-        a{
-            color: $blanco;
-        }
-    }
-    #demoBoton:active{
-        background-color: $blanco;
-        a{
-            color: $negro;
-        }
-    }
-
     div#modalCelular{
         div.modal-dialog{
             div.modal-content{
@@ -69,5 +44,42 @@
                 }
             }
         }
+    }
+}
+
+
+#compartirBoton{
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#demoBoton,
+#compartirBoton{
+    background-color: $blanco;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    a{
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $negro;
+        text-decoration: none;
+    }
+}
+
+#compartirBoton:hover,
+#demoBoton:hover{
+    background-color: $gris;
+    a{
+        color: $blanco;
+    }
+}
+
+#compartirBoton:active,
+#demoBoton:active{
+    background-color: $blanco;
+    a{
+        color: $negro;
     }
 }

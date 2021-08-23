@@ -54,8 +54,8 @@ p.aclaracion {
 #barraNavegacion ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: auto;
 }
 
@@ -605,7 +605,6 @@ div.flechaModal .fa-caret-left {
 
 section.subirMaterial {
   padding-top: 110px;
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,6 +619,7 @@ section.subirMaterial {
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 section.subirMaterial div.textoExplicativo {
@@ -703,6 +703,166 @@ section.subirMaterial div#login div.centrado a:active {
   color: #ffffff;
 }
 
+section.subirMaterial div#tipoPortadasSubir {
+  width: 80vw;
+  height: calc(100vh - 220px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.subirMaterial div#tipoPortadasSubir div {
+  background-color: #808184;
+  border: #ffffff 3px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.subirMaterial div#tipoPortadasSubir div a {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  padding: 90px 0;
+}
+
+section.subirMaterial div#tipoPortadasSubir div:hover {
+  background-color: #ffffff;
+  border: #808184 3px solid;
+}
+
+section.subirMaterial div#tipoPortadasSubir div:hover a {
+  color: #808184;
+}
+
+section.subirMaterial div#tipoPortadasSubir div.discos {
+  width: 170px;
+  height: 170px;
+}
+
+section.subirMaterial div#tipoPortadasSubir div.peliculas,
+section.subirMaterial div#tipoPortadasSubir div.libros {
+  height: 220px;
+  width: 170px;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body div#arrestreArchivo {
+  background-color: #808184;
+  border: #ffffff 3px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  margin: 10px auto;
+  padding: 30px 0;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body div#arrestreArchivo p {
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body div#arrestreArchivo img {
+  padding-bottom: 10px;
+  width: 40px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body div#arrestreArchivo:hover {
+  background-color: #ffffff;
+  border: #808184 3px solid;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body div#arrestreArchivo:hover p {
+  color: #808184;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body div#arrestreArchivo:hover img {
+  -webkit-filter: invert(0%);
+          filter: invert(0%);
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body form {
+  width: 40vw;
+  margin: auto;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body form p {
+  margin-top: 20px;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body form div input {
+  background-color: #808184;
+  border: none;
+  color: #ffffff;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body form div input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body form button {
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+  width: 100%;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body form button:hover {
+  background-color: #808184;
+  color: #ffffff;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body form button:active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+section.subirMaterial div#modalSubirMaterial div.modal-dialog div.modal-content div.modal-body form button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 ::-webkit-input-placeholder {
   color: #ffffff !important;
 }
@@ -719,10 +879,28 @@ section.subirMaterial div#login div.centrado a:active {
   color: #ffffff !important;
 }
 
+input#archivo {
+  opacity: 0;
+  position: absolute;
+  padding-top: 165px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 20px;
+}
+
 footer p {
   font-size: 14px;
   color: #ffffff;
   text-align: center;
+}
+
+footer#footer.otroMaterial {
+  position: relative;
+  bottom: 0;
+  width: 90%;
+  margin: auto;
 }
 
 @media (max-width: 1250px) {
@@ -765,30 +943,6 @@ footer p {
     text-align: center;
     font-size: 14px;
   }
-  #demoBoton {
-    background-color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 14px;
-  }
-  #demoBoton a {
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #000000;
-    text-decoration: none;
-  }
-  #demoBoton:hover {
-    background-color: #808184;
-  }
-  #demoBoton:hover a {
-    color: #ffffff;
-  }
-  #demoBoton:active {
-    background-color: #ffffff;
-  }
-  #demoBoton:active a {
-    color: #000000;
-  }
   div#modalCelular div.modal-dialog div.modal-content div.modal-body iframe {
     width: 95vw;
     height: calc( (95vw*315) / 560);
@@ -799,5 +953,47 @@ footer p {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+#compartirBoton {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#demoBoton,
+#compartirBoton {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+#demoBoton a,
+#compartirBoton a {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+}
+
+#compartirBoton:hover,
+#demoBoton:hover {
+  background-color: #808184;
+}
+
+#compartirBoton:hover a,
+#demoBoton:hover a {
+  color: #ffffff;
+}
+
+#compartirBoton:active,
+#demoBoton:active {
+  background-color: #ffffff;
+}
+
+#compartirBoton:active a,
+#demoBoton:active a {
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
