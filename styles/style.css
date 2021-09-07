@@ -603,6 +603,11 @@ div.flechaModal .fa-caret-left {
   background: #555;
 }
 
+#temploMason iframe {
+  width: 100%;
+  height: 90vh;
+}
+
 section.subirMaterial {
   padding-top: 110px;
   display: -webkit-box;
