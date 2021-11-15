@@ -285,11 +285,11 @@ section#perspectivas div.contenedorImg #portadasSolas div:hover {
 }
 
 section#perspectivas div#clickMasoneria {
-  width: 300px;
+  width: 150px;
   height: 40px;
   position: absolute;
-  top: calc(100vh - 141px);
-  left: 75px;
+  top: calc(100vh - 345px);
+  left: 390px;
   z-index: 20;
   cursor: pointer;
 }
